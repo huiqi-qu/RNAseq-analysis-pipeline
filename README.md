@@ -1,8 +1,6 @@
 # RNA-seq Analysis Pipeline
 
-This repository contains the cleaned, public-facing bulk RNA-seq analysis workflow used for post-alignment processing, quality control, gene-level quantification, and differential-expression analysis.
-
-Project-specific sample identifiers, institutional paths, usernames, and internal cluster details have been removed while preserving the software versions, analysis logic, QC thresholds, and key parameters needed for reproducibility.
+This repository contains the bulk RNA-seq workflow used for post-alignment processing, quality control, gene-level quantification, and differential-expression analysis.
 
 ## Software versions
 
@@ -147,12 +145,6 @@ The script:
 
 Adjusted P values are those returned by DESeq2 using the Benjamini-Hochberg procedure.
 
-### Important distinction
-
-This script is a **covariate-adjusted model** because it includes age, sex, and race in addition to batch.
-
-If the manuscript's primary disease analysis used a batch-only design, the exact batch-only analysis script should also be deposited. This repository does not relabel the covariate-adjusted script as the primary analysis.
-
 ## Input metadata format
 
 The DESeq2 script expects:
@@ -164,21 +156,3 @@ sample02,1,60,female,B,Ischemic
 ```
 
 Race is standardized to `W` or `B`. Sex is standardized to `male` or `female`.
-
-## Privacy and de-identification
-
-This public package intentionally excludes:
-
-- original sample identifiers;
-- phenotype tables;
-- patient-level data;
-- absolute institutional paths;
-- usernames/home-directory paths;
-- internal HPC hostnames;
-- raw sequence/BAM files.
-
-Public sequence and processed expression data should be referenced through the associated GEO accession.
-
-## Reproducibility note
-
-This repository preserves the analysis logic and software versions from the supplied project scripts while removing project-specific information. The public code should not be described as reproducing analyses for which the corresponding source script has not been included.
