@@ -1,0 +1,4 @@
+Sample,batch,AGE,Sex,Race,BigGroups
+sample01,1,55,male,W,Control
+sample02,1,60,female,B,Ischemic
+sample03,2,58,male,W,Nonischemic

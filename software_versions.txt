@@ -1,0 +1,8 @@
+STAR 2.5.2b
+SAMtools 1.16.1
+Subread/featureCounts 2.0.2
+Qualimap 2.3
+R 4.3.2
+DESeq2 1.42.1
+data.table version not recorded
+MultiQC version not recorded

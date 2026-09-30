@@ -1,0 +1,2 @@
+/path/to/sample01_Aligned.sortedByCoord.out.bam
+/path/to/sample02_Aligned.sortedByCoord.out.bam
