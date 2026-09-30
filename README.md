@@ -21,7 +21,7 @@ Gene-level quantification used:
 
 `Homo_sapiens.GRCh38.112.gtf`
 
-The public scripts require the annotation path as an argument and do not contain institutional file paths.
+The annotation path is provided as a command-line argument.
 
 ## Repository structure
 
@@ -120,7 +120,7 @@ This generates MultiQC reports for all, passed, and failed samples when correspo
 
 ## 5. Covariate-adjusted DESeq2 analysis
 
-`scripts/05_deseq2_covariate_adjusted.R` is the sanitized version of the supplied `runDEseq2.R`.
+`scripts/05_deseq2_covariate_adjusted.R` performs covariate-adjusted differential-expression analysis using DESeq2.
 
 It uses the design:
 
